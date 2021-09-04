@@ -32,7 +32,7 @@ public class AuthController {
     @GetMapping("check")
     public ResponseEntity<Boolean> checkAuth(@RequestHeader("JwtToken") String token) {
         return jwtUtil.checkToken(token)
-                ? new ResponseEntity<>(true, HttpStatus.OK)
-                : new ResponseEntity<>(false, HttpStatus.FORBIDDEN);
+                ? new ResponseEntity<>(HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.FORBIDDEN);
     }
 }
