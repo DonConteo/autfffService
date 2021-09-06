@@ -1,6 +1,5 @@
 package dmitriy.tsoy.russia.authService.service;
 
-import dmitriy.tsoy.russia.authService.config.JwtUtil;
 import dmitriy.tsoy.russia.authService.model.User;
 import dmitriy.tsoy.russia.authService.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
