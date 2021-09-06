@@ -21,8 +21,6 @@ public class JwtUtil {
 
     public String generateToken(String login) {
         Date date = new Date(System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(5));
-//        long expTime = System.currentTimeMillis() + 5 * 60 * 1000;
-//        Date date = ((Date) expTime);
         String token = Jwts.builder()
                 .setIssuer("autfffService")
                 .setSubject(login)
